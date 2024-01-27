@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MoviesAndReviews</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="package.json">
+        <link rel="stylesheet" href="movies.js">
+</head>
+<body>
+    <h1>Movie Reviews</h1>
+<!--Create list of movies, add images, add synopsis, and add ratings-->        
+<table>
+    <tr>
+        <th>Movie List</th>
+        <th>Ratings</th>
+        
+    </tr>
+    <tr>
+        <td>Aquaman and the Lost Kingdom</td>
+        <td>****</td>
+        
+    </tr>
+    <tr>
+        <td>I.S.S.</td>
+        <td>***</td>
+        
+    </tr>
+</table>
+
+<br>
+
+<h3>Synopsis</h3>
+      <ul>
+        <ol><img src="C:\Users\melin\Downloads\aquaman_and_the_lost_kingdom.htm"></ol>
+        <ol>This tells what the movie is about.</ol>
+    <br>
+        <ol><img src="C:\Users\melin\Downloads\I.S.S. _ Rotten Tomatoes_files"></ol>
+        <ol>This tells what the movie is about.</ol>
+   
+    </ul>
+
+<!--Make a review list, add reviews, create review form-->
+
+<h3>Reviews</h3>
+   <h5>Aquaman and the Lost Kingdom</h5>
+    <p>This is a review of the movie.</p>
+   <b></b>
+   <h5>I.S.S.</h5>
+   <p>This is a review of the movie.</p>
+
+<h3>Leave Your Review</h3>
+   <form>
+    <input type="text" placeholder="Your Review">
+   </form>
+   <button type="button">Submit</button>
+
+<!--Star Ratings-->   
+<h3>Likes</h3>
+<button id="likebutton">Like</button>
+<p id="Likes">Likes: 0</p>
+
+</body>
+<script>
+        console.log("test");
+        let likes = 0;
+        const likeButton = document.getElementById("likebutton");
+        const likesDisplay = document.getElementById("likes");
+
+    likebutton.addEventListener("click", () => {
+        console.log("clicked");
+        likes++;
+        likesDisplay.textContent = "Likes: " + likes;
+    });
+
+</script>
+
+</html>

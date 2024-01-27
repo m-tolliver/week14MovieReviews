@@ -1,0 +1,35 @@
+body {
+    background-color: cornflowerblue;
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+tr:hover {
+    background-color: green;
+}
+
+image{
+    src: file:///C:/Users/melin/OneDrive/Pictures/Saved%20Pictures/I.S.S.%20_%20Rotten%20Tomatoes_files/dnsfeed;
+    scr: 
+    background-origin: padding-box;
+    size-adjust: 40%;
+    border-radius: 5px;
+}
+
+form{
+    padding: 0px;
+    margin: 0px;
+}
+
+button{
+    color:black
+}
